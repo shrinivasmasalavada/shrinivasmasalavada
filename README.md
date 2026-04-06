@@ -1,4 +1,4 @@
-# Hi, I'm Shrinivasa Masalavada 👋
+ # Hi, I'm Shrinivasa Masalavada 👋
 
 ### 🚀 Innovator | AI & Embedded Systems Specialist
 I am a final-year BCA student and an **Intern at IIT Dharwad**, dedicated to building impactful technology-driven solutions.

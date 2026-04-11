@@ -15,10 +15,12 @@ I am a final-year BCA student and an **Intern at IIT Dharwad**, dedicated to bui
 - **Programming:** Python, C, C++, Data Structures.
 
 ## 🏆 Career Highlights
-- **World Record Holder:** Demonstrated excellence in discipline and physical endurance.
+- **Participated in a National-level Science Exhibition 🌍
+Interacted with German students, shared knowledge, and explored real-world projects in Robotics & Sensors.
+A truly inspiring experience! 🚀
 - **National Level Recognition:** Showcased innovations at **Vigyan Bhavan, New Delhi**.
 - **Patent-Pending Projects:** Working on innovative solutions for wildlife and agriculture.
-
+- **World Record Holder:** Demonstrated excellence in discipline and physical endurance
 ---
 
 ## 📬 Connect with me

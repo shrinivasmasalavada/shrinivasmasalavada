@@ -15,7 +15,7 @@ I am a final-year BCA student and an **Intern at IIT Dharwad**, dedicated to bui
 - **Programming:** Python, C, C++, Data Structures.
 
 ## 🏆 Career Highlights
-- **Participated in a National-level Science Exhibition 🌍
+Participated in a National-level Science Exhibition 🌍
 Interacted with German students, shared knowledge, and explored real-world projects in Robotics & Sensors.
 A truly inspiring experience! 🚀
 - **National Level Recognition:** Showcased innovations at **Vigyan Bhavan, New Delhi**.

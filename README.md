@@ -7,7 +7,7 @@ I am a final-year BCA student and an **Intern at IIT Dharwad**, dedicated to bui
 
 ## 🏛️ Current Focus
 - **Intern at IIT Dharwad:** Researching **Wireless Networking** and high-precision **AI Object Detection**.
-- **Specialization:** Real-time AI solutions for **Wildlife Conservation** and industrial safety.Embedded Systems AI/ML
+- **Specialization:** Real-time AI solutions for **Wildlife Conservation** and industrial safety./Embedded Systems AI/ML
 
 ## 🛠️ Tech Stack & Skills
 - **AI & Computer Vision:** Object Detection (YOLO, OpenCV), Image Processing.

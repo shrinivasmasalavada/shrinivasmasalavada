@@ -12,7 +12,7 @@ I am a final-year BCA student and an **Intern at IIT Dharwad**, dedicated to bui
 ## 🛠️ Tech Stack & Skills
 - **AI & Computer Vision:** Object Detection (YOLO, OpenCV), Image Processing.
 - Embedded Systems: IoT, Hardware Design, ESP32, Sensors.
-- **Programming:** Python, C, C++, Data Structures.
+- **Programming:** Python, C, C++, Data Structures. java.dsa.html.css.
 
 ## 🏆 Career Highlights
 Participated in a National-level Science Exhibition 🌍

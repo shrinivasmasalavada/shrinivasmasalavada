@@ -1,6 +1,6 @@
  # Hi, I'm Shrinivas 👋
 
-  AI/ML Embedded Systems /wireless networking specialisation
+  AI/ML Embedded Systems and wireless networking specialisation
 I am a final-year BCA student and an **Intern at IIT Dharwad**, dedicated to building impactful technology-driven solutions.
 
 ---

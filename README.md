@@ -11,8 +11,7 @@ I am a final-year BCA student and an **Intern at IIT Dharwad**, dedicated to bui
 ### ⚙️ Embedded Systems- IoT, ESP32, Sensors, Hardware Design
 ### 💻 Programming- Python, C, C++, Data Structures
 ---
-## 🏆 Career Highlights
-- 🌍 **World Record Holder** – Discipline & Physical Endurance  
+## 🏆 Career Highlights  
 - 🏅 **National Level Recognition** – Vigyan Bhavan, New Delhi  
 - 💡 **Patent-Pending Projects** – Wildlife & Agriculture Innovations  
 ---

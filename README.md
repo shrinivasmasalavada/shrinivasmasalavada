@@ -9,8 +9,7 @@ I am a final-year BCA student and an **Intern at IIT Dharwad**, dedicated to bui
 ## 🛠️ Tech Stack & Skills### 
 🤖 AI & Computer Vision- YOLO, OpenCV, Image Processing
 ### ⚙️ Embedded Systems- IoT, ESP32, Sensors, Hardware Design
-### 💻 Programming- Python, C, C++, Data Structures
----
+### 💻 Programming- Python, C, C++, Data Structures---
 ## 🏆 Career Highlights  
 - 🏅 **National Level Recognition** – Vigyan Bhavan, New Delhi  
 - 💡 **Patent-Pending Projects** – Wildlife & Agriculture Innovations  

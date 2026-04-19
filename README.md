@@ -9,13 +9,9 @@ I am a final-year BCA student and an **Intern at IIT Dharwad**, dedicated to bui
 
 - 🎯 **Specialization**  Real-time AI solutions for **Wildlife Conservation** & **Industrial Safety**
 ---
-## 🛠️ Tech Stack & Skills
-### 🤖 AI & Computer Vision
-- YOLO, OpenCV, Image Processing
-### ⚙️ Embedded Systems
-- IoT, ESP32, Sensors, Hardware Design
-### 💻 Programming
-- Python, C, C++, Data Structures
+## 🛠️ Tech Stack & Skills### 🤖 AI & Computer Vision- YOLO, OpenCV, Image Processing
+### ⚙️ Embedded Systems- IoT, ESP32, Sensors, Hardware Design
+### 💻 Programming- Python, C, C++, Data Structures
 ---
 ## 🏆 Career Highlights
 - 🌍 **World Record Holder** – Discipline & Physical Endurance  

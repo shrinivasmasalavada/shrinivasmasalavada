@@ -1,6 +1,6 @@
 # Hi, I'm Shri 👋
 
-### 🚀 Innovator | AI & Embedded Systems Specialist
+### 🚀 Innovator | AI/ML & Embedded Systems Specialisation
 
 I am a final-year BCA student and an **Intern at IIT Dharwad**, dedicated to building impactful technology-driven solutions.
 ---

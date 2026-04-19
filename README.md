@@ -1,4 +1,4 @@
-# Hi, I'm Shrinivasa Masalavada 👋
+# Hi, I'm Shri👋
 
 ### 🚀 Innovator | AI & Embedded Systems Specialist
 

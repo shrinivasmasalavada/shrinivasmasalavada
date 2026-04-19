@@ -3,44 +3,31 @@
 ### 🚀 Innovator | AI & Embedded Systems Specialist
 
 I am a final-year BCA student and an **Intern at IIT Dharwad**, dedicated to building impactful technology-driven solutions.
-
 ---
-
 ## 🏛️ Current Focus
 - 🎓 **Internship at IIT Dharwad**  
   Researching **Wireless Networking** & high-precision **AI Object Detection**
 
 - 🎯 **Specialization**  
   Real-time AI solutions for **Wildlife Conservation** & **Industrial Safety**
-
 ---
-
 ## 🛠️ Tech Stack & Skills
-
 ### 🤖 AI & Computer Vision
 - YOLO, OpenCV, Image Processing
-
 ### ⚙️ Embedded Systems
 - IoT, ESP32, Sensors, Hardware Design
-
 ### 💻 Programming
 - Python, C, C++, Data Structures
-
 ---
-
 ## 🏆 Career Highlights
 - 🌍 **World Record Holder** – Discipline & Physical Endurance  
 - 🏅 **National Level Recognition** – Vigyan Bhavan, New Delhi  
 - 💡 **Patent-Pending Projects** – Wildlife & Agriculture Innovations  
-
 ---
-
 ## 📬 Connect with Me
 - 📧 **Email:** Shrinivasamasalavad@gmail.com  
 - 📍 **Location:** Karnataka, India  
-
 ---
-
 ## 🧰 Tools & Technologies
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![C](https://img.shields.io/badge/c-00599C?style=for-the-badge&logo=c&logoColor=white)

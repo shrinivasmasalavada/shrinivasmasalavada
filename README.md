@@ -29,10 +29,8 @@ I am a final-year BCA student and an **Intern at IIT Dharwad**, dedicated to bui
 ---
 ## 📊 GitHub Stats
 ![Shrinivas's GitHub stats](https://github-readme-stats.vercel.app/api?username=shrinivasmasalavada&show_icons=true&theme=dark&hide_border=true)
-
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=shrinivasmasalavada&layout=compact&theme=dark&hide_border=true)   
 ## 🧰 Languages and Tools
-
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
 ![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)

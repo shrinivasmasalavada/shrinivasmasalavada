@@ -47,7 +47,7 @@ I am a final-year BCA student and an Intern at IIT Dharwad, dedicated to buildin
 ## 📬 Connect with Me
 - 📧 Email: Shrinivasamasalavad@gmail.com  
 - 📍 Location: Karnataka, India  
-
+PythonCCOpenCVArduinoRaspberry Pi### 📊 GitHub StatsShrinivas's GitHub statsTop Langs
 ---
 
 ## 📊 GitHub Stats

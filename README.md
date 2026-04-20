@@ -55,4 +55,7 @@ I am a final-year BCA student and an **Intern at IIT Dharwad**, dedicated to bui
 ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
 ![Twilio](https://img.shields.io/badge/Twilio-F22F46?style=for-the-badge&logo=twilio&logoColor=white)  
 
-![Stats](https://github-readme-stats.vercel.app/api?username=shrinivasmasalavada&theme=tokyonight)
+## 🐍 Contribution Animation
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake-dark.svg" />
+</p>

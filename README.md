@@ -59,3 +59,11 @@ I am a final-year BCA student and an **Intern at IIT Dharwad**, dedicated to bui
 <p align="center">
   <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake-dark.svg" />
 </p>
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=shrinivasmasalavada&show_icons=true&theme=tokyonight&hide_border=true" height="160"/>
+  <img src="https://streak-stats.demolab.com?user=shrinivasmasalavada&theme=tokyonight&hide_border=true" height="160"/>
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=shrinivasmasalavada&layout=compact&theme=tokyonight&hide_border=true" height="140"/>
+</p>

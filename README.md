@@ -36,16 +36,16 @@ I am a final-year BCA student and an **Intern at IIT Dharwad**, dedicated to bui
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
----### 🤖 AI / Computer Vision
+---🤖 AI / Computer Vision
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
 ![YOLO](https://img.shields.io/badge/YOLO-FF0000?style=for-the-badge)
 ![MediaPipe](https://img.shields.io/badge/MediaPipe-0097A7?style=for-the-badge)
----### 🌐 Technologies
+---🌐 Technologies
 ![IoT](https://img.shields.io/badge/IoT-00A8E8?style=for-the-badge)
 ![Sensors](https://img.shields.io/badge/Sensors-4CAF50?style=for-the-badge)
 ![Computer Vision](https://img.shields.io/badge/ComputerVision-FF9800?style=for-the-badge)
 ![Autonomous Systems](https://img.shields.io/badge/AutonomousSystems-9C27B0?style=for-the-badge)
----### ⚙️ Tools & OS
+---⚙️ Tools & OS
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux(Ubuntu)-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![VS Code](https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)

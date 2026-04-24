@@ -2,6 +2,13 @@
 ### 🚀 Innovator | AI/ML & Embedded Systems Specialisation
 I am a final-year BCA student and an **Intern at IIT Dharwad**, dedicated to building impactful technology-driven solutions.
 ---
+🌟 About Me
+
+I focus on designing and developing intelligent systems that solve real-world problems. My work blends Artificial Intelligence, Computer Vision, and Embedded Systems to build scalable and practical solutions.
+
+🔍 Interested in AI for Wildlife Conservation & Industrial Safety
+⚡ Building real-time object detection systems
+🌐 Exploring Wireless Networking & Edge AI
 ## 🏛️ Current Focus
 - 🎓 **Intern at IIT Dharwad**  **Wireless Networking** & high-precision **AI Object Detection** 
 - 🎯 **Specialization**  Real-time AI solutions for **Wildlife Conservation** & **Industrial Safety**---

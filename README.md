@@ -15,7 +15,7 @@ I focus on designing and developing intelligent systems that solve real-world pr
 ## 🛠️ Tech Stack & Skills 
 🤖 AI & Computer Vision- YOLO, OpenCV, Image Processing ### ⚙️ Embedded Systems- IoT, ESP32, Sensors, Hardware Design### 💻 Programming- Python, C, C++, Data Structures---
 ## 🏆 Career Highlights
-### 🌑 Annular Solar Eclipse Science Program (2019–20)- Selected at **state level** to participate in national science program at Madikeri  - Collaborated with **international students (Germany)**  - Explored **robotics and sensor-based engineering projects**  - Gained exposure to real-world innovation and scientific research  - Received official certification  
+### 🌑 Annular Solar Eclipse Science Program - Selected at **state level** to participate in national science program at Madikeri  - Collaborated with **international students (Germany)**  - Explored **robotics and sensor-based engineering projects**  - Gained exposure to real-world innovation and scientific research  - Received official certification  
 - 🏅 **National Level Recognition** – Vigyan Bhavan, New Delhi  
 - 💡 **Patent-Pending Projects** – Wildlife & Agriculture Innovations  
 ---

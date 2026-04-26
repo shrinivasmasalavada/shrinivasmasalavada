@@ -3,6 +3,7 @@
 I am a final-year BCA student and an **Intern at IIT Dharwad**, dedicated to building impactful technology-driven solutions.
 --- 
 🌟 About Me
+
 I focus on designing and developing intelligent systems that solve real-world problems. My work blends Artificial Intelligence, Computer Vision, and Embedded Systems to build scalable and practical solutions.
 
 🔍 Interested in AI for Wildlife Conservation & Industrial Safety 

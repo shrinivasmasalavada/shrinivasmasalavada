@@ -1,4 +1,198 @@
-  # Hi, I'm Shri 👋
+
+       
+   ```latex
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[left=0.7in,right=0.7in,top=0.7in,bottom=0.7in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{xcolor}
+
+\pagestyle{empty}
+
+% Section formatting
+\titleformat{\section}{
+    \large\bfseries\uppercase
+}{}{0em}{}[\titlerule]
+
+\setlist[itemize]{leftmargin=*, noitemsep, topsep=2pt}
+
+\begin{document}
+
+%====================
+% HEADER
+%====================
+
+\begin{center}
+    {\Huge \textbf{SHRINIVAS A.M}} \\[6pt]
+    Dharwad, Karnataka, India \\
+    +91 9886361791 \quad | \quad 
+    \href{mailto:Shrinivasamasalavad@gmail.com}{Shrinivasamasalavad@gmail.com}
+\end{center}
+
+\vspace{0.2cm}
+
+%====================
+% PROFESSIONAL SUMMARY
+%====================
+
+\section*{Professional Summary}
+
+Final-year BCA student specializing in Artificial Intelligence, Machine Learning, Computer Vision, and Embedded Systems, currently interning at IIT Dharwad. Skilled in Python, OpenCV, YOLO, ESP32, Raspberry Pi, IoT, and real-time AI applications. Experienced in developing intelligent systems for smart agriculture, wildlife monitoring, and industrial safety. Collaborated with international students from Germany and Nigeria on AI, robotics, and embedded systems projects. Passionate about Edge AI, robotics, autonomous systems, and solving real-world problems through technology.
+
+%====================
+% EDUCATION
+%====================
+
+\section*{Education}
+
+\textbf{Bachelor of Computer Applications (BCA)} \\
+Karnataka University \hfill Expected Graduation: 2026 \\
+Specialization: AI/ML \& Embedded Systems
+
+%====================
+% INTERNSHIP EXPERIENCE
+%====================
+
+\section*{Internship Experience}
+
+\textbf{AI/ML \& Embedded Systems Intern} \\
+Indian Institute of Technology Dharwad
+
+\begin{itemize}
+    \item Working on Wireless Networking technologies and AI-based Object Detection Systems.
+    \item Developing real-time Computer Vision applications using YOLO and OpenCV.
+    \item Exploring Embedded AI solutions using Raspberry Pi and ESP32 platforms.
+    \item Building intelligent systems for Wildlife Conservation and Industrial Safety.
+    \item Working on Edge AI and Autonomous System integration projects.
+    \item Contributing to sensor-based intelligent monitoring applications.
+\end{itemize}
+
+%====================
+% TECHNICAL SKILLS
+%====================
+
+\section*{Technical Skills}
+
+\textbf{Programming Languages:} Python, C, C++ \\
+
+\textbf{Artificial Intelligence \& Computer Vision:}
+Machine Learning, Computer Vision, YOLO Object Detection, OpenCV, Image Processing, MediaPipe \\
+
+\textbf{Embedded Systems \& IoT:}
+ESP32, Raspberry Pi, IoT Systems, Sensors Integration, Hardware Interfacing, Autonomous Systems \\
+
+\textbf{Tools \& Platforms:}
+Git, GitHub, Linux (Ubuntu), VS Code \\
+
+\textbf{Core Concepts:}
+Data Structures Basics, Edge AI, Wireless Networking, Real-Time AI Systems, Robotics Integration
+
+%====================
+% PROJECTS
+%====================
+
+\section*{Projects}
+
+\textbf{AI-Based Wildlife Conservation System}
+\begin{itemize}
+    \item Designed intelligent wildlife monitoring systems using AI and Computer Vision.
+    \item Developed real-time object detection and alert systems for wildlife monitoring.
+    \item Integrated sensors and embedded platforms for field-level deployment.
+\end{itemize}
+
+\textbf{Smart Agriculture Innovation System}
+\begin{itemize}
+    \item Built sensor-based smart agriculture solutions using IoT and Embedded Systems.
+    \item Developed automation concepts for real-time environmental monitoring.
+    \item Focused on practical AI applications for agriculture and farming support.
+\end{itemize}
+
+\textbf{Real-Time Object Detection System}
+\begin{itemize}
+    \item Developed AI-powered object detection applications using YOLO and OpenCV.
+    \item Optimized Computer Vision models for real-time edge-device deployment.
+    \item Worked on intelligent monitoring and detection pipelines.
+\end{itemize}
+
+\textbf{Embedded AI \& Sensor Integration Projects}
+\begin{itemize}
+    \item Worked with ESP32, Raspberry Pi, and sensor modules for intelligent systems.
+    \item Developed hardware-software integrated solutions for real-world applications.
+\end{itemize}
+
+%====================
+% INTERNATIONAL EXPERIENCE
+%====================
+
+\section*{International Collaboration \& Global Experience}
+
+\begin{itemize}
+    \item Collaborated with German students on Robotics and Sensor-based Engineering projects.
+    \item Collaborated with Nigerian students on Robotics, AI/ML, Real-Time Object Detection, and Embedded Systems projects.
+    \item Participated in global technical discussions and collaborative innovation activities.
+    \item Gained international exposure to AI systems, embedded technologies, and engineering solutions.
+\end{itemize}
+
+%====================
+% ACHIEVEMENTS
+%====================
+
+\section*{Achievements}
+
+\begin{itemize}
+    \item Participated in National-Level Science Exhibition.
+    \item Showcased innovation projects at Vigyan Bhavan.
+    \item Selected for Annular Solar Eclipse Science Program at State Level.
+    \item Received recognition for participation in science and innovation activities.
+    \item Working on patent-pending projects related to Wildlife Conservation and Smart Agriculture technologies.
+\end{itemize}
+
+%====================
+% CERTIFICATIONS
+%====================
+
+\section*{Certifications}
+
+\textbf{NITK Certified | 2023} \\
+National Institute of Technology Karnataka
+
+\begin{itemize}
+    \item National Science Program Participation Certificate
+    \item Robotics and Sensor-Based Engineering Activities
+    \item AI and Embedded Systems Project Development
+\end{itemize}
+
+%====================
+% AREAS OF INTEREST
+%====================
+
+\section*{Areas of Interest}
+
+Artificial Intelligence, Machine Learning, Computer Vision, Embedded Systems, Edge AI, Wildlife Conservation Technology, Industrial Safety Systems, Wireless Networking, Robotics, Autonomous Systems
+
+%====================
+% CURRENTLY LEARNING
+%====================
+
+\section*{Currently Learning}
+
+Deep Learning, Generative AI, Advanced Edge AI Systems, Real-Time AI Deployment, Intelligent Embedded Solutions
+
+%====================
+% LANGUAGES
+%====================
+
+\section*{Languages}
+
+Kannada, English, Hindi
+
+\end{document}
+```
+    
+       # Hi, I'm Shri 👋
   | AI/ML & Embedded Systems Specialisation
 I am a final-year BCA student and an **Intern at IIT Dharwad**, dedicated to building impactful technology-driven solutions.
 --- 

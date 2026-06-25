@@ -23,7 +23,7 @@ A truly inspiring experience! 🚀
 - National Level Recognition: Showcased innovations at **Vigyan Bhavan, New Delhi**.
  Working on innovative solutions .
   
----### 🌑 Annular Solar Eclipse Science Program - Selected at state level to participate in national science program at Madikeri  - Collaborated with international students (Germany)  - Explored **robotics and sensor-based engineering projects**  - Gained exposure to real-world innovation and scientific research  - Received official certification  
+🌑 Annular Solar Eclipse Science Program - Selected at state level to participate in national science program at Madikeri  - Collaborated with international students (Germany)  - Explored **robotics and sensor-based engineering projects**  - Gained exposure to real-world innovation and scientific research  - Received official certification  
 - 🏅 **National Level Recognition** – Vigyan Bhavan, New Delhi  
 - 💡 **Patent-Pending Projects** – Wildlife & Agriculture Innovations  
 ---

@@ -15,15 +15,15 @@ I focus on designing and developing intelligent systems that solve real-world pr
 - 🎓 **Intern at IIT Dharwad**  **Wireless Networking** & high-precision **AI Object Detection** 
 - 🎯 **Specialization**  Real-time AI solutions for **Wildlife Conservation** & **Industrial Safety**---
 ## 🛠️ Tech Stack & Skills 
-🤖 AI & Computer Vision- YOLO, OpenCV, Image Processing ### ⚙️ Embedded Systems- IoT, ESP32, Sensors, Hardware Design### 💻 Programming- Python, C, C++, Data Structures---
+🤖 AI & Computer Vision- YOLO, OpenCV, Image Processing ### ⚙️ Embedded Systems- IoT, ESP32, Sensors, Hardware Design💻 Programming- Python, C, C++, Data Structures
 ## 🏆 Career Highlights
 Participated in a National-level Science Exhibition 🌍
 Interacted with German students, shared knowledge, and explored real-world projects in Robotics & Sensors.
 A truly inspiring experience! 🚀
-- **National Level Recognition:** Showcased innovations at **Vigyan Bhavan, New Delhi**.
+- National Level Recognition: Showcased innovations at **Vigyan Bhavan, New Delhi**.
  Working on innovative solutions .
   
----### 🌑 Annular Solar Eclipse Science Program - Selected at **state level** to participate in national science program at Madikeri  - Collaborated with **international students (Germany)**  - Explored **robotics and sensor-based engineering projects**  - Gained exposure to real-world innovation and scientific research  - Received official certification  
+---### 🌑 Annular Solar Eclipse Science Program - Selected at state level to participate in national science program at Madikeri  - Collaborated with international students (Germany)  - Explored **robotics and sensor-based engineering projects**  - Gained exposure to real-world innovation and scientific research  - Received official certification  
 - 🏅 **National Level Recognition** – Vigyan Bhavan, New Delhi  
 - 💡 **Patent-Pending Projects** – Wildlife & Agriculture Innovations  
 ---

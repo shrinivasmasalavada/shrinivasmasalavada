@@ -1,8 +1,12 @@
     
        
  # Hi, I'm Shri 👋
-  | AI/ML & Embedded Systems Specialisation
-I am a final-year BCA student and an **Intern at IIT Dharwad**, dedicated to building impactful technology-driven solutions.
+Research Intern – Indian Institute of Technology Dharwad (IITDH) 2026
+
+Contributing to interdisciplinary research involving Artificial Intelligence, Computer Vision, and Embedded Systems.
+Supporting the development and evaluation of intelligent surveillance solutions through hardware and software integration.
+Working with Raspberry Pi, Python, thermal imaging, and wireless communication technologies for research applications.
+Collaborating with faculty and research teams to develop innovative engineering solutions and strengthen research skills. dedicated to building impactful technology-driven solutions.
 --- 
 🌟 About Me 
 

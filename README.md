@@ -1,10 +1,17 @@
  # Hi, I'm Shri 👋
 Research Intern – Indian Institute of Technology Dharwad (IITDH) 2026
 
+```text
 Contributing to interdisciplinary research involving Artificial Intelligence, Computer Vision, and Embedded Systems.
+
 Supporting the development and evaluation of intelligent surveillance solutions through hardware and software integration.
+
 Working with Raspberry Pi, Python, thermal imaging, and wireless communication technologies for research applications.
-Collaborating with faculty and research teams to develop innovative engineering solutions and strengthen research skills. dedicated to building impactful technology-driven solutions.
+
+Collaborating with faculty and research teams to develop innovative engineering solutions and strengthen research skills.
+
+Dedicated to building impactful technology-driven solutions.
+```
 --- 
 🌟 About Me 
 

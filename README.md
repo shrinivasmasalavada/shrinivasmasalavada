@@ -1,4 +1,4 @@
- # Hi, I'm Shri 👋
+  # Hi, I'm Shri 👋
 Research Intern – Indian Institute of Technology Dharwad (IITDH) 2026
 
 ```text

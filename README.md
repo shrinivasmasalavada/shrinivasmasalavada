@@ -11,6 +11,7 @@ Working with Raspberry Pi, Python, thermal imaging, and wireless communication t
 Collaborating with faculty and research teams to develop innovative engineering solutions and strengthen research skills.
 
 Dedicated to building impactful technology-driven solutions.
+ ---
 
 🌟 About Me 
 

@@ -1,4 +1,4 @@
-# <h1 align="center">Hi 👋, I'm Shri</h1>
+# <h1 align="center">Hi 👋 I'm Shri</h1>
 
 <h3 align="center">Research Intern @ Indian Institute of Technology Dharwad (IITDH) | Artificial Intelligence • Computer Vision • Embedded Systems</h3>
 

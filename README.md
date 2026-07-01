@@ -1,57 +1,102 @@
 # <h1 align="center">Hi 👋, I'm Shri</h1>
 
-<h3 align="center">Research Intern @ IIT Dharwad | AI • Computer Vision • Embedded Systems</h3>
+<h3 align="center">Research Intern @ Indian Institute of Technology Dharwad (IITDH) | Artificial Intelligence • Computer Vision • Embedded Systems</h3>
 
 <p align="center">
-<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=24&duration=3500&pause=1000&center=true&vCenter=true&width=800&lines=Artificial+Intelligence+Researcher;Computer+Vision+Developer;Embedded+Systems+Engineer;Edge+AI+%7C+Wireless+Networking;Building+Technology+for+Wildlife+Conservation" />
+<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=24&duration=3500&pause=1000&center=true&vCenter=true&width=900&lines=Artificial+Intelligence+Researcher;Computer+Vision+Developer;Embedded+Systems+Engineer;Wireless+Networking+%7C+Edge+AI;Building+Technology+for+Wildlife+Conservation;Industrial+Safety+AI+Solutions" />
+</p>
+
+<p align="center">
+<img src="https://komarev.com/ghpvc/?username=shrinivasmasalavada&label=Profile%20Views&color=0e75b6&style=for-the-badge"/>
+<img src="https://img.shields.io/github/followers/shrinivasmasalavada?label=Followers&style=for-the-badge"/>
+<img src="https://img.shields.io/github/stars/shrinivasmasalavada?affiliations=OWNER&style=for-the-badge"/>
 </p>
 
 ---
 
-## 🚀 About Me
+# 🚀 About Me
 
-🎓 Research Intern at **Indian Institute of Technology Dharwad (IITDH)**
+I am passionate about building intelligent systems that solve real-world engineering problems using **Artificial Intelligence, Computer Vision, Embedded Systems, IoT, and Edge AI**.
 
-💡 Passionate about solving real-world problems using **Artificial Intelligence**, **Computer Vision**, and **Embedded Systems**
+Currently, I am contributing to interdisciplinary research at **Indian Institute of Technology Dharwad (IITDH)**, where I work on intelligent surveillance technologies through hardware and software integration.
 
-🔬 Currently working on:
+---
 
-* AI Object Detection
-* Intelligent Surveillance
-* Raspberry Pi
-* Thermal Imaging
-* Wireless Networking
+## 🔬 Current Research
+
+* 🤖 AI-powered Intelligent Surveillance
+* 🎯 High-Precision Object Detection
+* 🖥️ Raspberry Pi Edge Computing
+* 🌡️ Thermal Imaging Systems
+* 📡 Wireless Networking
+* 📷 Computer Vision
+* ⚡ Embedded AI Systems
+* 🔧 Hardware & Software Integration
+
+---
+
+# 🎯 Research Interests
+
+* Artificial Intelligence
+* Computer Vision
+* Embedded Systems
 * Edge AI
-
-🌱 Currently Learning
-
-* Deep Learning
-* Generative AI
 * Machine Learning
+* Deep Learning
+* Wireless Sensor Networks
+* IoT
+* Wildlife Conservation
+* Industrial Safety
+* Autonomous Intelligent Systems
 
 ---
 
 # 🛠 Tech Stack
 
-### Programming
+## 👨‍💻 Programming Languages
 
 <p>
 <img src="https://skillicons.dev/icons?i=python,c,cpp"/>
 </p>
 
-### AI & Computer Vision
+---
+
+## 🤖 AI • Machine Learning • Computer Vision
 
 <p>
 <img src="https://skillicons.dev/icons?i=opencv,tensorflow,pytorch"/>
 </p>
 
-### Embedded Systems
+**Technologies**
+
+* YOLO
+* OpenCV
+* MediaPipe
+* Image Processing
+* NumPy
+* Pandas
+
+---
+
+## 🌐 Embedded Systems
 
 <p>
 <img src="https://skillicons.dev/icons?i=arduino,raspberrypi"/>
 </p>
 
-### Tools
+**Experience**
+
+* Raspberry Pi
+* ESP32
+* Arduino
+* IoT
+* Sensor Integration
+* Hardware Design
+* Autonomous Systems
+
+---
+
+## ⚙️ Development Tools
 
 <p>
 <img src="https://skillicons.dev/icons?i=git,github,vscode,linux"/>
@@ -59,21 +104,68 @@
 
 ---
 
-# 🏆 Achievements
+# 🌱 Currently Learning
 
-🏅 National Level Science Exhibition
-
-🏛 Presented innovation at **Vigyan Bhavan, New Delhi**
-
-🌍 Collaborated with German students on Robotics & Sensors
-
-🌑 Selected for National Annular Solar Eclipse Science Program
-
-💡 Working on AI-based innovations for Wildlife Conservation & Industrial Safety
+* Machine Learning
+* Deep Learning
+* Generative AI
+* Edge Intelligence
+* Data Analytics
+* Advanced Computer Vision
+* Wireless Networking
 
 ---
 
-# 📈 GitHub Analytics
+# 🏆 Achievements
+
+### 🏅 National Level Science Exhibition
+
+* Presented innovative engineering projects.
+* Received National-Level Recognition.
+* Showcased innovation at **Vigyan Bhavan, New Delhi**.
+
+---
+
+### 🌑 Annular Solar Eclipse Science Program
+
+* Selected at the State Level.
+* Participated in the National Science Program at Madikeri.
+* Received official certification.
+
+---
+
+### 🌍 International Collaboration
+
+* Collaborated with German students.
+* Worked on Robotics and Sensor Engineering projects.
+* Shared engineering knowledge and innovation.
+
+---
+
+### 💡 Innovation
+
+* Working on patent-oriented ideas for:
+
+  * Wildlife Conservation
+  * Agriculture Technology
+  * AI-based Intelligent Systems
+
+---
+
+# 🚀 Featured Areas
+
+* 🦁 Wildlife Monitoring
+* 🏭 Industrial Safety
+* 📷 Computer Vision
+* 🤖 Artificial Intelligence
+* 🛰️ Edge AI
+* 📡 Wireless Communication
+* 🌡️ Thermal Imaging
+* ⚙️ Embedded Systems
+
+---
+
+# 📊 GitHub Statistics
 
 <p align="center">
 
@@ -91,7 +183,7 @@
 
 ---
 
-# 🐍 Contribution Graph
+# 🐍 Contribution Snake
 
 <p align="center">
 
@@ -101,16 +193,30 @@
 
 ---
 
-# 🌐 Connect with Me
+# 📈 GitHub Activity Graph
 
-<p align="left">
+<p align="center">
 
-<a href="https://www.linkedin.com/">
-<img src="https://skillicons.dev/icons?i=linkedin"/>
-</a>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=shrinivasmasalavada&theme=tokyo-night"/>
+
+</p>
+
+---
+
+# 📫 Connect With Me
+
+📧 **Email:** [Shrinivasamasalavada@gmail.com](mailto:Shrinivasamasalavada@gmail.com)
+
+📍 **Location:** Karnataka, India
+
+<p>
 
 <a href="https://github.com/shrinivasmasalavada">
 <img src="https://skillicons.dev/icons?i=github"/>
+</a>
+
+<a href="https://www.linkedin.com/in/YOUR-LINKEDIN">
+<img src="https://skillicons.dev/icons?i=linkedin"/>
 </a>
 
 <a href="mailto:Shrinivasamasalavada@gmail.com">
@@ -121,17 +227,12 @@
 
 ---
 
-# 📊 Profile Views
+# 💬 Quote
 
-<p align="left">
-
-<img src="https://komarev.com/ghpvc/?username=shrinivasmasalavada&label=Profile%20Views&color=0e75b6&style=for-the-badge"/>
-
-</p>
+> **"Building intelligent technologies that create real-world impact through Artificial Intelligence, Computer Vision, and Embedded Systems."**
 
 ---
 
-# 💬 Quote
-
-> **"Building intelligent technology that creates real-world impact through AI and Embedded Systems."**
-
+<h3 align="center">
+⭐ Thanks for visiting my profile! Feel free to explore my repositories and connect with me.
+</h3>

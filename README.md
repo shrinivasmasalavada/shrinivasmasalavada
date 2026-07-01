@@ -11,8 +11,7 @@ Working with Raspberry Pi, Python, thermal imaging, and wireless communication t
 Collaborating with faculty and research teams to develop innovative engineering solutions and strengthen research skills.
 
 Dedicated to building impactful technology-driven solutions.
-```
---- 
+
 🌟 About Me 
 
 I focus on designing and developing intelligent systems that solve real-world problems. My work blends Artificial Intelligence, Computer Vision, and Embedded Systems to build scalable and practical solutions.

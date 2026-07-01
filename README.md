@@ -28,7 +28,6 @@
 * Deep Learning
 * Generative AI
 * Machine Learning
-* Data Analytics
 
 ---
 

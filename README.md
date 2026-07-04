@@ -362,7 +362,7 @@ Research focused on high-precision AI object detection paired with real-time wir
 <img height="170" src="https://github-readme-stats.vercel.app/api?username=shrinivasmasalavada&show_icons=true&theme=tokyonight&hide_border=true"/>
 
 <img height="170" src="https://streak-stats.demolab.com?user=shrinivasmasalavada&theme=tokyonight&hide_border=true"/>
-
+<img src="https://github-readme-stats.vercel.app/api?username=shrinivasmasalavada&show_icons=true&count_private=true&include_all_commits=true&theme=tokyonight&hide_border=true"/>
 </div>
 
 <h2 align="center">⚡ GitHub Contribution Graph</h2>

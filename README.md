@@ -375,7 +375,13 @@ Research focused on high-precision AI object detection paired with real-time wir
 
 <br/><br/>
 
+<h2 align="center">⚡ GitHub Contribution Graph</h2>
 
+<div align="center">
+
+<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=shrinivasmasalavada&theme=react-dark&bg_color=0D1117&color=00F5FF&line=8A2BE2&point=FF00A0&area=true&hide_border=true"/>
+
+</div>
 
 </div>
 

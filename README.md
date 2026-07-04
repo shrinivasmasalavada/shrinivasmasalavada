@@ -357,23 +357,13 @@ Research focused on high-precision AI object detection paired with real-time wir
 
 <br/>
 
-<!-- ============================================================ -->
-<!-- GITHUB ANALYTICS -->
-<!-- ============================================================ -->
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0A0E14,100:1B0F3D&height=100&section=header&text=GitHub%20Analytics&fontSize=28&fontColor=38BDF8&fontAlignY=65" width="100%"/>
-
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=<GITHUB_USERNAME>&show_icons=true&hide_border=true&bg_color=0A0E14&title_color=38BDF8&icon_color=7C3AED&text_color=E5E7EB&count_private=true"/>
-<img height="165" src="https://github-readme-streak-stats.herokuapp.com/?user=<GITHUB_USERNAME>&hide_border=true&background=0A0E14&stroke=38BDF8&ring=7C3AED&fire=FFB86B&currStreakLabel=38BDF8&sideLabels=E5E7EB&dates=6B7280"/>
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=shrinivasmasalavada&show_icons=true&theme=tokyonight&hide_border=true"/>
 
-<br/>
+<img height="170" src="https://streak-stats.demolab.com?user=shrinivasmasalavada&theme=tokyonight&hide_border=true"/>
 
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=<GITHUB_USERNAME>&layout=compact&hide_border=true&bg_color=0A0E14&title_color=38BDF8&text_color=E5E7EB&langs_count=8"/>
-<img height="165" src="https://github-profile-trophy.vercel.app/?username=<GITHUB_USERNAME>&theme=algolia&no-frame=true&no-bg=true&margin-w=8&column=4"/>
-
-<br/><br/>
+</div>
 
 <h2 align="center">⚡ GitHub Contribution Graph</h2>
 

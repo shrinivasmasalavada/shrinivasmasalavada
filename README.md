@@ -375,7 +375,7 @@ Research focused on high-precision AI object detection paired with real-time wir
 
 <br/><br/>
 
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=<GITHUB_USERNAME>&bg_color=0A0E14&color=38BDF8&line=7C3AED&point=FFB86B&area=true&hide_border=true"/>
+
 
 </div>
 

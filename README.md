@@ -1,4 +1,4 @@
-<div align="center">
+<div align="center"> 
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0A0E14,50:0F1F3D,100:1B0F3D&height=280&section=header&text=SIGNAL%20%2B%20SIGHT%20%2B%20SILICON&fontSize=42&fontColor=38BDF8&fontAlignY=38&animation=fadeIn&desc=AI%20%C2%B7%20Computer%20Vision%20%C2%B7%20Embedded%20Systems%20%C2%B7%20Wireless%20Networking&descSize=18&descColor=A78BFA&descAlignY=58" width="100%"/>
 

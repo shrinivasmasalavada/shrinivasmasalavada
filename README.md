@@ -426,5 +426,4 @@ Research focused on high-precision AI object detection paired with real-time wir
 
 </div>
 <p align="center">
-  <img src="assets/profile-banner.png" alt="Shrinivas Banner" width="100%">
-</p>
+ 

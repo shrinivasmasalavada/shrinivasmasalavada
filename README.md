@@ -425,3 +425,4 @@ Research focused on high-precision AI object detection paired with real-time wir
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1B0F3D,50:0F1F3D,100:0A0E14&height=150&section=footer"/>
 
 </div>
+![Uploading ChatGPT Image Jul 17, 2026, 12_56_54 AM.png…]()

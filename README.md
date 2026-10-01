@@ -427,7 +427,6 @@ Research focused on high-precision AI object detection paired with real-time wir
 </div>
 <p align="center">
 
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -437,11 +436,9 @@ Research focused on high-precision AI object detection paired with real-time wir
 
 <title>DroneX | Research • Internship • Workshops</title>
 
-<!-- Google Font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-<!-- Three.js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
 <style>
@@ -479,7 +476,7 @@ img{
 
 
 /* =========================================================
-   BACKGROUND GLOW
+   BACKGROUND
 ========================================================= */
 
 body::before{
@@ -494,6 +491,7 @@ body::before{
     top:-250px;
     left:-200px;
     z-index:-5;
+    pointer-events:none;
 }
 
 body::after{
@@ -508,6 +506,7 @@ body::after{
     right:-250px;
     bottom:-200px;
     z-index:-5;
+    pointer-events:none;
 }
 
 
@@ -689,7 +688,7 @@ nav{
 
 
 /* =========================================================
-   THREE JS CANVAS
+   THREE JS
 ========================================================= */
 
 #drone3d{
@@ -800,7 +799,7 @@ nav{
 
 
 /* =========================================================
-   GENERAL SECTION
+   SECTIONS
 ========================================================= */
 
 section{
@@ -942,7 +941,7 @@ section{
 
 
 /* =========================================================
-   ABOUT DRONE WORK
+   ABOUT
 ========================================================= */
 
 .about{
@@ -1422,10 +1421,21 @@ footer{
     }
 }
 
+
 @media(max-width:600px){
+
+    nav{
+        top:10px;
+        padding:13px 16px;
+    }
 
     .nav-links{
         display:none;
+    }
+
+    .hero{
+        width:92%;
+        padding-top:70px;
     }
 
     .hero h1{
@@ -1433,16 +1443,42 @@ footer{
         letter-spacing:-2px;
     }
 
+    .hero-description{
+        font-size:15px;
+    }
+
     .hero-3d{
         height:390px;
     }
 
+    .scan-ring{
+        width:280px;
+        height:280px;
+    }
+
     .stats{
         grid-template-columns:1fr 1fr;
+        margin-top:0;
+    }
+
+    .stat{
+        padding:18px 10px;
+    }
+
+    .stat h3{
+        font-size:22px;
+    }
+
+    section{
+        margin:100px auto;
     }
 
     .section-top h2{
         font-size:34px;
+    }
+
+    .section-top p{
+        line-height:1.6;
     }
 
     .internship{
@@ -1470,8 +1506,18 @@ footer{
 
     .gallery-item:first-child{
         grid-column:auto;
+        grid-row:auto;
     }
 
+    .cta-buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .cta-buttons .btn{
+        width:100%;
+        max-width:280px;
+    }
 }
 
 
@@ -1482,7 +1528,7 @@ footer{
 .reveal{
     opacity:0;
     transform:translateY(40px);
-    transition:1s;
+    transition:1s ease;
 }
 
 .reveal.active{
@@ -1490,8 +1536,80 @@ footer{
     transform:translateY(0);
 }
 
-</style>
 
+/* =========================================================
+   MOBILE MENU BUTTON
+========================================================= */
+
+.menu-btn{
+    display:none;
+
+    width:40px;
+    height:40px;
+
+    border-radius:10px;
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.1);
+
+    color:white;
+
+    font-size:20px;
+
+    cursor:pointer;
+}
+
+.mobile-menu{
+    display:none;
+
+    position:fixed;
+
+    top:78px;
+    left:4%;
+
+    width:92%;
+
+    padding:20px;
+
+    background:rgba(3,7,18,.95);
+
+    backdrop-filter:blur(25px);
+
+    border:1px solid rgba(255,255,255,.1);
+
+    border-radius:18px;
+
+    z-index:998;
+}
+
+.mobile-menu a{
+    display:block;
+
+    padding:14px;
+
+    color:#aeb8ca;
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+.mobile-menu a:hover{
+    color:#00e5ff;
+}
+
+@media(max-width:600px){
+
+    .menu-btn{
+        display:block;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+}
+
+</style>
 </head>
 
 
@@ -1504,12 +1622,1891 @@ footer{
 
 <nav>
 
-    <div class="logo">
+    <a href="#home" class="logo">
         DRONE<span>X</span>
-    </div>
+    </a>
 
     <div class="nav-links">
         <a href="#work">Work</a>
+        <a href="#about">About</a>
         <a href="#research">Research</a>
         <a href="#internship">Internship</a>
-```
+        <a href="#workshops">Workshops</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <button class="menu-btn" id="menuBtn">
+        ☰
+    </button>
+
+</nav>
+
+
+<!-- MOBILE MENU -->
+
+<div class="mobile-menu" id="mobileMenu">
+
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#internship">Internship</a>
+    <a href="#workshops">Workshops</a>
+    <a href="#contact">Contact</a>
+
+</div>
+
+
+<!-- =======================================================
+     HERO
+======================================================= -->
+
+<main id="home">
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="small-label">
+            <span class="dot"></span>
+            DRONE RESEARCH & INNOVATION
+        </div>
+
+        <h1>
+            Building the
+            <span class="gradient">Future</span>
+            of Drones.
+        </h1>
+
+        <p class="hero-description">
+            DroneX is a research and learning platform focused on
+            autonomous drones, AI, robotics, wireless communication,
+            embedded systems and real-world field applications.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#research" class="btn btn-primary">
+                Explore Research →
+            </a>
+
+            <a href="#internship" class="btn btn-secondary">
+                Join Internship
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-3d">
+
+        <div class="scan-ring"></div>
+
+        <canvas id="drone3d"></canvas>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     STATS
+======================================================= -->
+
+<div class="stats reveal">
+
+    <div class="stat">
+        <h3>AI</h3>
+        <p>Intelligent Systems</p>
+    </div>
+
+    <div class="stat">
+        <h3>CV</h3>
+        <p>Computer Vision</p>
+    </div>
+
+    <div class="stat">
+        <h3>GPS</h3>
+        <p>Autonomous Navigation</p>
+    </div>
+
+    <div class="stat">
+        <h3>IoT</h3>
+        <p>Wireless Communication</p>
+    </div>
+
+</div>
+
+
+<!-- =======================================================
+     DRONE APPLICATIONS
+======================================================= -->
+
+<section id="work">
+
+    <div class="section-top reveal">
+
+        <div class="label">
+            APPLICATIONS
+        </div>
+
+        <h2>
+            Drones Beyond Flying
+        </h2>
+
+        <p>
+            Technology designed for real-world problems.
+        </p>
+
+    </div>
+
+
+    <div class="drone-grid">
+
+
+        <div class="drone-card reveal">
+
+            <div class="card-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?auto=format&fit=crop&w=1200&q=80"
+                    alt="Agricultural drone"
+                >
+
+            </div>
+
+            <div class="card-content">
+
+                <div class="card-icon">
+                    🌾
+                </div>
+
+                <h3>
+                    Smart Agriculture
+                </h3>
+
+                <p>
+                    Precision agriculture using drones,
+                    computer vision, crop monitoring,
+                    spraying systems and intelligent field analytics.
+                </p>
+
+                <div class="tags">
+
+                    <span class="tag">AI</span>
+                    <span class="tag">Computer Vision</span>
+                    <span class="tag">GPS</span>
+                    <span class="tag">Agriculture</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="drone-card reveal">
+
+            <div class="card-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=1200&q=80"
+                    alt="Autonomous drone"
+                >
+
+            </div>
+
+            <div class="card-content">
+
+                <div class="card-icon">
+                    🚨
+                </div>
+
+                <h3>
+                    Disaster Response
+                </h3>
+
+                <p>
+                    Autonomous aerial systems for disaster
+                    monitoring, thermal imaging, GPS navigation,
+                    search and rescue operations.
+                </p>
+
+                <div class="tags">
+
+                    <span class="tag">Thermal AI</span>
+                    <span class="tag">GPS</span>
+                    <span class="tag">Rescue</span>
+                    <span class="tag">Robotics</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="drone-card reveal">
+
+            <div class="card-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1527977966376-1c8408f9f108?auto=format&fit=crop&w=1200&q=80"
+                    alt="Drone technology"
+                >
+
+            </div>
+
+            <div class="card-content">
+
+                <div class="card-icon">
+                    📡
+                </div>
+
+                <h3>
+                    Wireless & Surveillance
+                </h3>
+
+                <p>
+                    Research in long-range communication,
+                    telemetry, wireless networking and intelligent
+                    aerial monitoring systems.
+                </p>
+
+                <div class="tags">
+
+                    <span class="tag">LoRa</span>
+                    <span class="tag">RF</span>
+                    <span class="tag">Telemetry</span>
+                    <span class="tag">Networking</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     ABOUT
+======================================================= -->
+
+<section id="about">
+
+    <div class="section-top reveal">
+
+        <div class="label">
+            ABOUT DRONEX
+        </div>
+
+        <h2>
+            Learn. Build. Fly. Research.
+        </h2>
+
+        <p>
+            A practical platform connecting drone technology
+            with AI, electronics and robotics.
+        </p>
+
+    </div>
+
+
+    <div class="about">
+
+
+        <div class="about-box reveal">
+
+            <h3>
+                What We Do
+            </h3>
+
+            <p>
+                DroneX focuses on practical drone engineering,
+                embedded systems, artificial intelligence and
+                autonomous navigation.
+            </p>
+
+            <ul class="about-list">
+
+                <li>
+                    Drone assembly and system understanding
+                </li>
+
+                <li>
+                    Flight controller and embedded systems
+                </li>
+
+                <li>
+                    AI and computer vision
+                </li>
+
+                <li>
+                    GPS and autonomous navigation
+                </li>
+
+                <li>
+                    Wireless communication
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="about-box reveal">
+
+            <h3>
+                Our Approach
+            </h3>
+
+            <p>
+                Instead of learning only from theory, participants
+                work with real hardware, field environments and
+                prototype development.
+            </p>
+
+            <ul class="about-list">
+
+                <li>
+                    Hands-on hardware
+                </li>
+
+                <li>
+                    Real-world field learning
+                </li>
+
+                <li>
+                    Prototype development
+                </li>
+
+                <li>
+                    AI integration
+                </li>
+
+                <li>
+                    Documentation and project building
+                </li>
+
+            </ul>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     RESEARCH
+======================================================= -->
+
+<section id="research">
+
+    <div class="section-top reveal">
+
+        <div class="label">
+            RESEARCH
+        </div>
+
+        <h2>
+            Research Areas
+        </h2>
+
+        <p>
+            Exploring the technologies behind next-generation drones.
+        </p>
+
+    </div>
+
+
+    <div class="research-grid">
+
+
+        <div class="research-card reveal">
+
+            <div class="research-icon">
+                🧠
+            </div>
+
+            <h3>
+                AI & Computer Vision
+            </h3>
+
+            <p>
+                Object detection, image classification, thermal
+                imaging, tracking and edge AI for autonomous aerial systems.
+            </p>
+
+        </div>
+
+
+        <div class="research-card reveal">
+
+            <div class="research-icon">
+                🛰️
+            </div>
+
+            <h3>
+                GPS & Navigation
+            </h3>
+
+            <p>
+                GPS-based navigation, waypoint systems, autonomous
+                movement and positioning for unmanned aerial vehicles.
+            </p>
+
+        </div>
+
+
+        <div class="research-card reveal">
+
+            <div class="research-icon">
+                📡
+            </div>
+
+            <h3>
+                Wireless Communication
+            </h3>
+
+            <p>
+                Research involving LoRa, telemetry, RF communication,
+                long-range links and drone-to-ground communication.
+            </p>
+
+        </div>
+
+
+        <div class="research-card reveal">
+
+            <div class="research-icon">
+                ⚡
+            </div>
+
+            <h3>
+                Energy & Power
+            </h3>
+
+            <p>
+                Studying battery consumption, power management,
+                propulsion efficiency and ways to reduce energy usage.
+            </p>
+
+        </div>
+
+
+        <div class="research-card reveal">
+
+            <div class="research-icon">
+                🤖
+            </div>
+
+            <h3>
+                Autonomous Robotics
+            </h3>
+
+            <p>
+                Combining drones, robotics, sensors and AI to develop
+                systems capable of making decisions with minimal human input.
+            </p>
+
+        </div>
+
+
+        <div class="research-card reveal">
+
+            <div class="research-icon">
+                🔧
+            </div>
+
+            <h3>
+                Embedded Systems
+            </h3>
+
+            <p>
+                Microcontrollers, flight controllers, sensors,
+                actuators, communication modules and real-time systems.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     INTERNSHIP
+======================================================= -->
+
+<section id="internship">
+
+    <div class="internship reveal">
+
+        <div class="internship-content">
+
+            <div class="section-top" style="text-align:left;margin-bottom:20px;">
+
+                <div class="label">
+                    INTERNSHIP PROGRAM
+                </div>
+
+            </div>
+
+            <h2>
+                Learn Drone Technology
+                Through Real Projects.
+            </h2>
+
+            <p>
+                A practical internship experience for students who
+                want to understand drone hardware, electronics,
+                AI, communication and field deployment.
+            </p>
+
+
+            <div class="internship-list">
+
+                <div class="internship-item">
+                    ✈️ Drone Assembly
+                </div>
+
+                <div class="internship-item">
+                    🔋 Battery & Power Systems
+                </div>
+
+                <div class="internship-item">
+                    🎮 Remote Control Systems
+                </div>
+
+                <div class="internship-item">
+                    📡 Communication Systems
+                </div>
+
+                <div class="internship-item">
+                    🛰️ GPS & Navigation
+                </div>
+
+                <div class="internship-item">
+                    🧠 AI & Computer Vision
+                </div>
+
+                <div class="internship-item">
+                    🌾 Agricultural Applications
+                </div>
+
+                <div class="internship-item">
+                    🔧 Maintenance & Troubleshooting
+                </div>
+
+            </div>
+
+
+            <a href="#contact" class="btn btn-primary">
+                Apply for Internship →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     WORKSHOPS
+======================================================= -->
+
+<section id="workshops">
+
+    <div class="section-top reveal">
+
+        <div class="label">
+            WORKSHOPS
+        </div>
+
+        <h2>
+            Practical Learning
+        </h2>
+
+        <p>
+            Short-term hands-on workshops designed around real technology.
+        </p>
+
+    </div>
+
+
+    <div class="workshop-grid">
+
+
+        <div class="workshop-card reveal">
+
+            <div class="workshop-number">
+                WORKSHOP 01
+            </div>
+
+            <h3>
+                Drone Fundamentals
+            </h3>
+
+            <p>
+                Understand drone components, frame, motors,
+                ESC, propellers, batteries, controllers and
+                basic flight principles.
+            </p>
+
+        </div>
+
+
+        <div class="workshop-card reveal">
+
+            <div class="workshop-number">
+                WORKSHOP 02
+            </div>
+
+            <h3>
+                Agricultural Drone
+            </h3>
+
+            <p>
+                Learn about agricultural spraying drones,
+                payload systems, batteries, propulsion and
+                field deployment.
+            </p>
+
+        </div>
+
+
+        <div class="workshop-card reveal">
+
+            <div class="workshop-number">
+                WORKSHOP 03
+            </div>
+
+            <h3>
+                AI Drone
+            </h3>
+
+            <p>
+                Build an introduction to AI-powered drones
+                using cameras, computer vision, object detection
+                and edge computing.
+            </p>
+
+        </div>
+
+
+        <div class="workshop-card reveal">
+
+            <div class="workshop-number">
+                WORKSHOP 04
+            </div>
+
+            <h3>
+                GPS Autonomous Drone
+            </h3>
+
+            <p>
+                Explore GPS positioning, waypoint navigation,
+                telemetry and autonomous flight concepts.
+            </p>
+
+        </div>
+
+
+        <div class="workshop-card reveal">
+
+            <div class="workshop-number">
+                WORKSHOP 05
+            </div>
+
+            <h3>
+                Embedded Drone Systems
+            </h3>
+
+            <p>
+                Work with microcontrollers, sensors, actuators,
+                communication modules and embedded programming.
+            </p>
+
+        </div>
+
+
+        <div class="workshop-card reveal">
+
+            <div class="workshop-number">
+                WORKSHOP 06
+            </div>
+
+            <h3>
+                Drone Project Development
+            </h3>
+
+            <p>
+                Convert an idea into a working prototype through
+                problem identification, electronics, programming,
+                testing and documentation.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     PROCESS
+======================================================= -->
+
+<section>
+
+    <div class="section-top reveal">
+
+        <div class="label">
+            HOW IT WORKS
+        </div>
+
+        <h2>
+            From Idea to Prototype
+        </h2>
+
+        <p>
+            A practical engineering workflow.
+        </p>
+
+    </div>
+
+
+    <div class="process">
+
+
+        <div class="process-step reveal">
+
+            <div class="process-number">
+                01
+            </div>
+
+            <h4>
+                Learn
+            </h4>
+
+            <p>
+                Understand the technology,
+                components and engineering principles.
+            </p>
+
+        </div>
+
+
+        <div class="process-step reveal">
+
+            <div class="process-number">
+                02
+            </div>
+
+            <h4>
+                Build
+            </h4>
+
+            <p>
+                Assemble hardware and develop
+                software for the prototype.
+            </p>
+
+        </div>
+
+
+        <div class="process-step reveal">
+
+            <div class="process-number">
+                03
+            </div>
+
+            <h4>
+                Test
+            </h4>
+
+            <p>
+                Perform controlled testing,
+                debugging and field experiments.
+            </p>
+
+        </div>
+
+
+        <div class="process-step reveal">
+
+            <div class="process-number">
+                04
+            </div>
+
+            <h4>
+                Deploy
+            </h4>
+
+            <p>
+                Apply the technology to
+                practical real-world problems.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     TECHNOLOGY
+======================================================= -->
+
+<section>
+
+    <div class="section-top reveal">
+
+        <div class="label">
+            TECHNOLOGY STACK
+        </div>
+
+        <h2>
+            Technologies We Explore
+        </h2>
+
+        <p>
+            Hardware, software, AI and communication technologies.
+        </p>
+
+    </div>
+
+
+    <div class="tech-wrapper reveal">
+
+        <div class="tech">Python</div>
+        <div class="tech">C / C++</div>
+        <div class="tech">Embedded C</div>
+        <div class="tech">STM32</div>
+        <div class="tech">ESP32</div>
+        <div class="tech">Raspberry Pi</div>
+        <div class="tech">Arduino</div>
+        <div class="tech">OpenCV</div>
+        <div class="tech">YOLO</div>
+        <div class="tech">Edge AI</div>
+        <div class="tech">Computer Vision</div>
+        <div class="tech">GPS</div>
+        <div class="tech">LoRa</div>
+        <div class="tech">RF Communication</div>
+        <div class="tech">Telemetry</div>
+        <div class="tech">ROS 2</div>
+        <div class="tech">Linux</div>
+        <div class="tech">GStreamer</div>
+        <div class="tech">Drone Electronics</div>
+        <div class="tech">Robotics</div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     FIELD EXPERIENCE
+======================================================= -->
+
+<section>
+
+    <div class="section-top reveal">
+
+        <div class="label">
+            FIELD EXPERIENCE
+        </div>
+
+        <h2>
+            From Lab to Field
+        </h2>
+
+        <p>
+            Engineering becomes meaningful when it works outside the lab.
+        </p>
+
+    </div>
+
+
+    <div class="gallery">
+
+
+        <div class="gallery-item reveal">
+
+            <img
+                src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=1400&q=80"
+                alt="Drone field operation"
+            >
+
+            <span>
+                Field Operations
+            </span>
+
+        </div>
+
+
+        <div class="gallery-item reveal">
+
+            <img
+                src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?auto=format&fit=crop&w=1000&q=80"
+                alt="Agricultural drone"
+            >
+
+            <span>
+                Agriculture
+            </span>
+
+        </div>
+
+
+        <div class="gallery-item reveal">
+
+            <img
+                src="https://images.unsplash.com/photo-1527977966376-1c8408f9f108?auto=format&fit=crop&w=1000&q=80"
+                alt="Drone technology"
+            >
+
+            <span>
+                Drone Systems
+            </span>
+
+        </div>
+
+
+        <div class="gallery-item reveal">
+
+            <img
+                src="https://images.unsplash.com/photo-1494253109108-2e30c049369b?auto=format&fit=crop&w=1000&q=80"
+                alt="Technology research"
+            >
+
+            <span>
+                Research
+            </span>
+
+        </div>
+
+
+        <div class="gallery-item reveal">
+
+            <img
+                src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=80"
+                alt="Electronics"
+            >
+
+            <span>
+                Electronics
+            </span>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     CTA
+======================================================= -->
+
+<section id="contact">
+
+    <div class="cta reveal">
+
+        <h2>
+            Build Something
+            That Flies.
+        </h2>
+
+        <p>
+            Whether you are a student looking for hands-on
+            experience, a researcher exploring aerial robotics,
+            or an organization looking for drone technology,
+            DroneX is built around practical experimentation.
+        </p>
+
+
+        <div class="cta-buttons">
+
+            <a
+                href="mailto:hello@dronex.in"
+                class="btn btn-primary"
+            >
+                Contact DroneX →
+            </a>
+
+            <a
+                href="#workshops"
+                class="btn btn-secondary"
+            >
+                View Workshops
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =======================================================
+     FOOTER
+======================================================= -->
+
+<footer>
+
+    <div class="footer-logo">
+        DRONE<span style="color:#00e5ff;">X</span>
+    </div>
+
+    <p>
+        Research • Internship • Workshops • Innovation
+    </p>
+
+    <p style="margin-top:15px;font-size:11px;">
+        © 2026 DroneX. All rights reserved.
+    </p>
+
+</footer>
+
+
+<!-- =======================================================
+     JAVASCRIPT
+======================================================= -->
+
+<script>
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+const menuBtn = document.getElementById("menuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+
+menuBtn.addEventListener("click", () => {
+
+    if(mobileMenu.style.display === "block"){
+        mobileMenu.style.display = "none";
+    }else{
+        mobileMenu.style.display = "block";
+    }
+
+});
+
+
+document.querySelectorAll(".mobile-menu a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        mobileMenu.style.display = "none";
+
+    });
+
+});
+
+
+/* =========================================================
+   SCROLL REVEAL
+========================================================= */
+
+const revealElements = document.querySelectorAll(".reveal");
+
+const revealObserver = new IntersectionObserver(
+    (entries) => {
+
+        entries.forEach(entry => {
+
+            if(entry.isIntersecting){
+
+                entry.target.classList.add("active");
+
+            }
+
+        });
+
+    },
+    {
+        threshold:0.12
+    }
+);
+
+
+revealElements.forEach(element => {
+
+    revealObserver.observe(element);
+
+});
+
+
+/* =========================================================
+   THREE.JS DRONE
+========================================================= */
+
+const canvas = document.getElementById("drone3d");
+
+const scene = new THREE.Scene();
+
+
+/* CAMERA */
+
+const camera = new THREE.PerspectiveCamera(
+    45,
+    canvas.clientWidth / canvas.clientHeight,
+    0.1,
+    1000
+);
+
+camera.position.set(
+    0,
+    2.2,
+    9
+);
+
+
+/* RENDERER */
+
+const renderer = new THREE.WebGLRenderer({
+    canvas:canvas,
+    antialias:true,
+    alpha:true
+});
+
+renderer.setPixelRatio(
+    Math.min(window.devicePixelRatio,2)
+);
+
+renderer.setSize(
+    canvas.clientWidth,
+    canvas.clientHeight,
+    false
+);
+
+
+/* =========================================================
+   LIGHTING
+========================================================= */
+
+const ambientLight = new THREE.AmbientLight(
+    0xffffff,
+    0.8
+);
+
+scene.add(ambientLight);
+
+
+const light1 = new THREE.PointLight(
+    0x00e5ff,
+    3,
+    30
+);
+
+light1.position.set(
+    4,
+    5,
+    6
+);
+
+scene.add(light1);
+
+
+const light2 = new THREE.PointLight(
+    0x7c3aed,
+    3,
+    30
+);
+
+light2.position.set(
+    -5,
+    2,
+    4
+);
+
+scene.add(light2);
+
+
+/* =========================================================
+   DRONE GROUP
+========================================================= */
+
+const drone = new THREE.Group();
+
+scene.add(drone);
+
+
+/* =========================================================
+   BODY
+========================================================= */
+
+const bodyGeometry = new THREE.BoxGeometry(
+    2.2,
+    0.35,
+    1.15
+);
+
+const bodyMaterial = new THREE.MeshStandardMaterial({
+
+    color:0x111827,
+
+    metalness:.85,
+
+    roughness:.25
+
+});
+
+const body = new THREE.Mesh(
+    bodyGeometry,
+    bodyMaterial
+);
+
+drone.add(body);
+
+
+/* =========================================================
+   BODY TOP
+========================================================= */
+
+const topGeometry = new THREE.BoxGeometry(
+    1.15,
+    0.22,
+    0.7
+);
+
+const topMaterial = new THREE.MeshStandardMaterial({
+
+    color:0x00d9ff,
+
+    metalness:.7,
+
+    roughness:.25
+
+});
+
+const top = new THREE.Mesh(
+    topGeometry,
+    topMaterial
+);
+
+top.position.y = .28;
+
+drone.add(top);
+
+
+/* =========================================================
+   CAMERA MODULE
+========================================================= */
+
+const cameraGeometry = new THREE.BoxGeometry(
+    .55,
+    .45,
+    .5
+);
+
+const cameraMaterial = new THREE.MeshStandardMaterial({
+
+    color:0x020617,
+
+    metalness:.6,
+
+    roughness:.2
+
+});
+
+const cameraModule = new THREE.Mesh(
+    cameraGeometry,
+    cameraMaterial
+);
+
+cameraModule.position.set(
+    0,
+    -.35,
+    .05
+);
+
+drone.add(cameraModule);
+
+
+/* CAMERA LENS */
+
+const lensGeometry = new THREE.CylinderGeometry(
+    .16,
+    .16,
+    .08,
+    32
+);
+
+const lensMaterial = new THREE.MeshStandardMaterial({
+
+    color:0x00e5ff,
+
+    emissive:0x00e5ff,
+
+    emissiveIntensity:2
+
+});
+
+const lens = new THREE.Mesh(
+    lensGeometry,
+    lensMaterial
+);
+
+lens.rotation.x = Math.PI / 2;
+
+lens.position.set(
+    0,
+    -.35,
+    .32
+);
+
+drone.add(lens);
+
+
+/* =========================================================
+   ARMS
+========================================================= */
+
+function createArm(
+    x,
+    z,
+    rotation
+){
+
+    const armGeometry =
+        new THREE.BoxGeometry(
+            3.6,
+            .18,
+            .18
+        );
+
+    const armMaterial =
+        new THREE.MeshStandardMaterial({
+
+            color:0x374151,
+
+            metalness:.8,
+
+            roughness:.25
+
+        });
+
+    const arm =
+        new THREE.Mesh(
+            armGeometry,
+            armMaterial
+        );
+
+    arm.position.set(
+        x,
+        0,
+        z
+    );
+
+    arm.rotation.y = rotation;
+
+    drone.add(arm);
+
+}
+
+
+/* X configuration */
+
+createArm(
+    0,
+    0,
+    Math.PI / 4
+);
+
+createArm(
+    0,
+    0,
+    -Math.PI / 4
+);
+
+
+/* =========================================================
+   MOTORS + PROPELLERS
+========================================================= */
+
+const propellers = [];
+
+function createMotor(
+    x,
+    z
+){
+
+    const motorGeometry =
+        new THREE.CylinderGeometry(
+            .25,
+            .25,
+            .3,
+            20
+        );
+
+    const motorMaterial =
+        new THREE.MeshStandardMaterial({
+
+            color:0x050505,
+
+            metalness:.9,
+
+            roughness:.2
+
+        });
+
+    const motor =
+        new THREE.Mesh(
+            motorGeometry,
+            motorMaterial
+        );
+
+    motor.position.set(
+        x,
+        .12,
+        z
+    );
+
+    drone.add(motor);
+
+
+    /* PROP */
+
+    const propGeometry =
+        new THREE.BoxGeometry(
+            1.6,
+            .035,
+            .12
+        );
+
+    const propMaterial =
+        new THREE.MeshStandardMaterial({
+
+            color:0x00e5ff,
+
+            transparent:true,
+
+            opacity:.65,
+
+            emissive:0x00e5ff,
+
+            emissiveIntensity:.4
+
+        });
+
+    const prop =
+        new THREE.Mesh(
+            propGeometry,
+            propMaterial
+        );
+
+    prop.position.set(
+        x,
+        .34,
+        z
+    );
+
+    drone.add(prop);
+
+    propellers.push(prop);
+
+}
+
+
+/* Four motors */
+
+createMotor(1.25,1.25);
+createMotor(-1.25,1.25);
+createMotor(1.25,-1.25);
+createMotor(-1.25,-1.25);
+
+
+/* =========================================================
+   LANDING LEGS
+========================================================= */
+
+function createLeg(
+    x,
+    z
+){
+
+    const legGeometry =
+        new THREE.CylinderGeometry(
+            .07,
+            .07,
+            .7,
+            12
+        );
+
+    const legMaterial =
+        new THREE.MeshStandardMaterial({
+
+            color:0x64748b,
+
+            metalness:.8,
+
+            roughness:.3
+
+        });
+
+    const leg =
+        new THREE.Mesh(
+            legGeometry,
+            legMaterial
+        );
+
+    leg.position.set(
+        x,
+        -.4,
+        z
+    );
+
+    drone.add(leg);
+
+}
+
+
+createLeg(.7,.45);
+createLeg(-.7,.45);
+createLeg(.7,-.45);
+createLeg(-.7,-.45);
+
+
+/* =========================================================
+   DRONE POSITION
+========================================================= */
+
+drone.scale.set(
+    .9,
+    .9,
+    .9
+);
+
+drone.rotation.x =
+    -0.12;
+
+drone.rotation.z =
+    -0.08;
+
+
+/* =========================================================
+   PARTICLES
+========================================================= */
+
+const particleGeometry =
+    new THREE.BufferGeometry();
+
+const particleCount = 500;
+
+const positions =
+    new Float32Array(
+        particleCount * 3
+    );
+
+for(
+    let i = 0;
+    i < particleCount;
+    i++
+){
+
+    positions[i * 3] =
+        (Math.random() - .5) * 14;
+
+    positions[i * 3 + 1] =
+        (Math.random() - .5) * 9;
+
+    positions[i * 3 + 2] =
+        (Math.random() - .5) * 12;
+
+}
+
+particleGeometry.setAttribute(
+    "position",
+    new THREE.BufferAttribute(
+        positions,
+        3
+    )
+);
+
+
+const particleMaterial =
+    new THREE.PointsMaterial({
+
+        color:0x00e5ff,
+
+        size:.025,
+
+        transparent:true,
+
+        opacity:.5
+
+    });
+
+
+const particles =
+    new THREE.Points(
+        particleGeometry,
+        particleMaterial
+    );
+
+scene.add(particles);
+
+
+/* =========================================================
+   MOUSE INTERACTION
+========================================================= */
+
+let mouseX = 0;
+let mouseY = 0;
+
+document.addEventListener(
+    "mousemove",
+    (event) => {
+
+        mouseX =
+            (event.clientX / window.innerWidth - .5);
+
+        mouseY =
+            (event.clientY / window.innerHeight - .5);
+
+    }
+);
+
+
+/* =========================================================
+   ANIMATION
+========================================================= */
+
+const clock = new THREE.Clock();
+
+function animate(){
+
+    requestAnimationFrame(
+        animate
+    );
+
+    const time =
+        clock.getElapsedTime();
+
+
+    /* Drone floating */
+
+    drone.position.y =
+        Math.sin(time * 1.4) * .25;
+
+
+    /* Drone rotation */
+
+    drone.rotation.y += .003;
+
+
+    drone.rotation.x =
+        -0.12 +
+        mouseY * .15;
+
+
+    drone.rotation.z =
+        -0.08 +
+        mouseX * .15;
+
+
+    /* Propellers */
+
+    propellers.forEach(
+        (prop,index) => {
+
+            prop.rotation.y +=
+                index % 2 === 0
+                ? .35
+                : -.35;
+
+        }
+    );
+
+
+    /* Particles */
+
+    particles.rotation.y =
+        time * .015;
+
+
+    particles.rotation.x =
+        Math.sin(time * .1) * .05;
+
+
+    /* Mouse camera */
+
+    camera.position.x +=
+        (mouseX * .8 - camera.position.x)
+        * .03;
+
+    camera.position.y +=
+        (2.2 - mouseY * .5 - camera.position.y)
+        * .03;
+
+    camera.lookAt(
+        0,
+        0,
+        0
+    );
+
+
+    renderer.render(
+        scene,
+        camera
+    );
+
+}
+
+
+animate();
+
+
+/* =========================================================
+   RESPONSIVE THREE.JS
+========================================================= */
+
+function resizeThree(){
+
+    const width =
+        canvas.clientWidth;
+
+    const height =
+        canvas.clientHeight;
+
+    if(width === 0 || height === 0)
+        return;
+
+    camera.aspect =
+        width / height;
+
+    camera.updateProjectionMatrix();
+
+    renderer.setSize(
+        width,
+        height,
+        false
+    );
+
+}
+
+
+window.addEventListener(
+    "resize",
+    resizeThree
+);
+
+resizeThree();
+
+
+/* =========================================================
+   ACTIVE NAVIGATION
+========================================================= */
+
+const sections =
+    document.querySelectorAll(
+        "section[id]"
+    );
+
+const navLinks =
+    document.querySelectorAll(
+        ".nav-links a"
+    );
+
+window.addEventListener(
+    "scroll",
+    () => {
+
+        let current = "";
+
+        sections.forEach(
+            section => {
+
+                const sectionTop =
+                    section.offsetTop - 180;
+
+                if(
+                    window.scrollY >=
+                    sectionTop
+                ){
+
+                    current =
+                        section.getAttribute(
+                            "id"
+                        );
+
+                }
+
+            }
+        );
+
+
+        navLinks.forEach(
+            link => {
+
+                link.style.color =
+                    "#aeb8ca";
+
+                if(
+                    link.getAttribute("href")
+                    === "#" + current
+                ){
+
+                    link.style.color =
+                        "#00e5ff";
+
+                }
+
+            }
+        );
+
+    }
+);
+
+
+/* =========================================================
+   BUTTON RIPPLE EFFECT
+========================================================= */
+
+document.querySelectorAll(".btn").forEach(
+    button => {
+
+        button.addEventListener(
+            "click",
+            function(){
+
+                this.style.transform =
+                    "scale(.96)";
+
+                setTimeout(
+                    () => {
+
+                        this.style.transform =
+                            "";
+
+                    },
+                    120
+                );
+
+            }
+        );
+
+    }
+);
+
+</script>
+
+</body>
+</html>

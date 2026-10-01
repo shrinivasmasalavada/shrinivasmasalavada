@@ -427,18 +427,28 @@ Research focused on high-precision AI object detection paired with real-time wir
 </div>
 <p align="center">
 
- ```html
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Shrinivas | Drone Research & Innovation</title>
+<title>DroneX | Research • Internship • Workshops</title>
+
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- Three.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* =========================================================
+   GLOBAL
+========================================================= */
 
 *{
     margin:0;
@@ -451,85 +461,1055 @@ html{
 }
 
 body{
-    font-family:'Inter',sans-serif;
-    background:#050816;
+    font-family:Inter,Arial,sans-serif;
+    background:#030712;
     color:white;
     overflow-x:hidden;
 }
 
-/* ================= BACKGROUND ================= */
-
-body:before{
-    content:"";
-    position:fixed;
-    width:500px;
-    height:500px;
-    background:#00e5ff;
-    border-radius:50%;
-    filter:blur(180px);
-    opacity:.12;
-    top:-200px;
-    left:-150px;
-    z-index:-1;
+a{
+    text-decoration:none;
+    color:inherit;
 }
 
-body:after{
+img{
+    max-width:100%;
+    display:block;
+}
+
+
+/* =========================================================
+   BACKGROUND GLOW
+========================================================= */
+
+body::before{
     content:"";
     position:fixed;
-    width:500px;
-    height:500px;
-    background:#a855f7;
+    width:600px;
+    height:600px;
     border-radius:50%;
+    background:#00d9ff;
     filter:blur(180px);
-    opacity:.12;
+    opacity:.08;
+    top:-250px;
+    left:-200px;
+    z-index:-5;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    width:600px;
+    height:600px;
+    border-radius:50%;
+    background:#8b5cf6;
+    filter:blur(180px);
+    opacity:.09;
+    right:-250px;
     bottom:-200px;
-    right:-150px;
-    z-index:-1;
+    z-index:-5;
 }
 
-/* ================= NAVBAR ================= */
 
-.navbar{
-    width:90%;
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+nav{
+    position:fixed;
+    top:18px;
+    left:50%;
+    transform:translateX(-50%);
+
+    width:92%;
     max-width:1200px;
-    margin:20px auto;
-    padding:16px 24px;
+
+    padding:15px 22px;
 
     display:flex;
     justify-content:space-between;
     align-items:center;
 
-    background:rgba(10,15,35,.7);
-    backdrop-filter:blur(20px);
+    background:rgba(3,7,18,.65);
+    backdrop-filter:blur(22px);
 
     border:1px solid rgba(255,255,255,.1);
-    border-radius:18px;
+    border-radius:20px;
 
-    position:sticky;
-    top:15px;
-    z-index:100;
+    z-index:999;
 }
 
 .logo{
     font-size:20px;
-    font-weight:800;
+    font-weight:900;
+    letter-spacing:-1px;
 }
 
 .logo span{
     color:#00e5ff;
 }
 
-.navbar a{
-    color:#b8c2d9;
-    text-decoration:none;
-    margin-left:25px;
-    font-size:14px;
+.nav-links{
+    display:flex;
+    gap:25px;
+}
+
+.nav-links a{
+    color:#aeb8ca;
+    font-size:13px;
     transition:.3s;
 }
 
-.navbar a:hover{
+.nav-links a:hover{
     color:#00e5ff;
 }
 
-/* ================= H*
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+    min-height:100vh;
+
+    position:relative;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+
+    max-width:1250px;
+    width:90%;
+
+    margin:auto;
+
+    padding-top:80px;
+}
+
+.hero-content{
+    position:relative;
+    z-index:5;
+}
+
+.small-label{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+
+    padding:9px 15px;
+
+    border-radius:30px;
+
+    background:rgba(0,229,255,.07);
+    border:1px solid rgba(0,229,255,.25);
+
+    color:#00e5ff;
+
+    font-size:12px;
+    font-weight:700;
+
+    margin-bottom:25px;
+}
+
+.dot{
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    background:#00e5ff;
+    box-shadow:0 0 15px #00e5ff;
+}
+
+.hero h1{
+    font-size:clamp(48px,6vw,82px);
+    line-height:1;
+    letter-spacing:-4px;
+    margin-bottom:25px;
+}
+
+.gradient{
+    background:linear-gradient(
+        90deg,
+        #00e5ff,
+        #7c3aed,
+        #ff3cac
+    );
+
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.hero-description{
+    max-width:580px;
+
+    color:#96a1b5;
+
+    font-size:17px;
+    line-height:1.8;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:14px;
+
+    margin-top:35px;
+
+    flex-wrap:wrap;
+}
+
+.btn{
+    padding:15px 22px;
+
+    border-radius:13px;
+
+    font-size:14px;
+    font-weight:700;
+
+    transition:.3s;
+}
+
+.btn-primary{
+    background:linear-gradient(
+        100deg,
+        #00c6ff,
+        #7c3aed
+    );
+
+    box-shadow:
+        0 10px 40px rgba(0,198,255,.15);
+}
+
+.btn-secondary{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.12);
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+}
+
+
+/* =========================================================
+   THREE JS CANVAS
+========================================================= */
+
+#drone3d{
+    position:absolute;
+
+    width:100%;
+    height:100%;
+
+    top:0;
+    left:0;
+
+    z-index:1;
+}
+
+.hero-3d{
+    height:650px;
+    position:relative;
+}
+
+.scan-ring{
+    position:absolute;
+
+    width:390px;
+    height:390px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(0,229,255,.15);
+
+    left:50%;
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    box-shadow:
+        0 0 80px rgba(0,229,255,.08);
+
+    animation:spin 15s linear infinite;
+}
+
+.scan-ring::after{
+    content:"";
+
+    position:absolute;
+
+    width:100%;
+    height:100%;
+
+    border-radius:50%;
+
+    border-top:1px solid #00e5ff;
+
+    transform:rotate(35deg);
+}
+
+@keyframes spin{
+    from{
+        transform:translate(-50%,-50%) rotate(0);
+    }
+
+    to{
+        transform:translate(-50%,-50%) rotate(360deg);
+    }
+}
+
+
+/* =========================================================
+   STATS
+========================================================= */
+
+.stats{
+    width:90%;
+    max-width:1100px;
+
+    margin:-40px auto 100px;
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    gap:15px;
+
+    position:relative;
+    z-index:10;
+}
+
+.stat{
+    padding:25px;
+
+    text-align:center;
+
+    background:rgba(255,255,255,.04);
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+}
+
+.stat h3{
+    font-size:28px;
+}
+
+.stat p{
+    margin-top:6px;
+    color:#7e8ba1;
+    font-size:12px;
+}
+
+
+/* =========================================================
+   GENERAL SECTION
+========================================================= */
+
+section{
+    width:90%;
+    max-width:1200px;
+    margin:140px auto;
+}
+
+.section-top{
+    text-align:center;
+    margin-bottom:55px;
+}
+
+.section-top .label{
+    color:#00e5ff;
+    font-size:12px;
+    font-weight:800;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.section-top h2{
+    font-size:45px;
+    letter-spacing:-2px;
+    margin:12px 0;
+}
+
+.section-top p{
+    color:#8793a8;
+}
+
+
+/* =========================================================
+   DRONE APPLICATIONS
+========================================================= */
+
+.drone-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+}
+
+.drone-card{
+    min-height:450px;
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    background:#080d1c;
+
+    border:1px solid rgba(255,255,255,.09);
+
+    position:relative;
+
+    transition:.5s;
+}
+
+.drone-card:hover{
+    transform:translateY(-12px);
+    border-color:rgba(0,229,255,.35);
+
+    box-shadow:
+        0 30px 80px rgba(0,0,0,.4);
+}
+
+.card-image{
+    height:230px;
+    overflow:hidden;
+    position:relative;
+}
+
+.card-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.7s;
+}
+
+.drone-card:hover .card-image img{
+    transform:scale(1.1);
+}
+
+.card-image::after{
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    background:
+        linear-gradient(
+            transparent,
+            #080d1c
+        );
+}
+
+.card-content{
+    padding:25px;
+    margin-top:-20px;
+    position:relative;
+    z-index:2;
+}
+
+.card-icon{
+    font-size:35px;
+    margin-bottom:12px;
+}
+
+.card-content h3{
+    font-size:24px;
+    margin-bottom:12px;
+}
+
+.card-content p{
+    color:#8995a9;
+    line-height:1.7;
+    font-size:14px;
+}
+
+.tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:7px;
+
+    margin-top:18px;
+}
+
+.tag{
+    padding:6px 9px;
+
+    border-radius:7px;
+
+    background:rgba(255,255,255,.06);
+
+    color:#bac4d4;
+
+    font-size:10px;
+}
+
+
+/* =========================================================
+   ABOUT DRONE WORK
+========================================================= */
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.about-box{
+    min-height:330px;
+
+    padding:40px;
+
+    border-radius:28px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0,229,255,.08),
+            rgba(124,58,237,.06)
+        );
+
+    border:1px solid rgba(255,255,255,.09);
+
+    position:relative;
+    overflow:hidden;
+}
+
+.about-box::before{
+    content:"";
+
+    position:absolute;
+
+    width:250px;
+    height:250px;
+
+    border-radius:50%;
+
+    background:#00e5ff;
+
+    filter:blur(120px);
+
+    opacity:.08;
+
+    right:-100px;
+    bottom:-100px;
+}
+
+.about-box h3{
+    font-size:29px;
+    margin-bottom:20px;
+}
+
+.about-box p{
+    color:#98a4b8;
+    line-height:1.9;
+}
+
+.about-list{
+    list-style:none;
+    margin-top:25px;
+}
+
+.about-list li{
+    padding:9px 0;
+    color:#c6cfdd;
+    font-size:14px;
+}
+
+.about-list li::before{
+    content:"✓";
+    color:#00e5ff;
+    margin-right:10px;
+}
+
+
+/* =========================================================
+   RESEARCH
+========================================================= */
+
+.research-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.research-card{
+    padding:32px;
+
+    border-radius:22px;
+
+    background:rgba(255,255,255,.035);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.4s;
+}
+
+.research-card:hover{
+    background:rgba(255,255,255,.06);
+    transform:translateY(-7px);
+}
+
+.research-icon{
+    font-size:35px;
+}
+
+.research-card h3{
+    margin:15px 0 10px;
+}
+
+.research-card p{
+    color:#8995a9;
+    line-height:1.7;
+}
+
+
+/* =========================================================
+   INTERNSHIP
+========================================================= */
+
+.internship{
+    position:relative;
+
+    padding:70px 50px;
+
+    border-radius:32px;
+
+    overflow:hidden;
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(0,229,255,.15),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 80% 80%,
+            rgba(168,85,247,.15),
+            transparent 35%
+        ),
+        #080d1c;
+
+    border:1px solid rgba(255,255,255,.1);
+}
+
+.internship-content{
+    max-width:700px;
+}
+
+.internship h2{
+    font-size:45px;
+    letter-spacing:-2px;
+    margin-bottom:18px;
+}
+
+.internship p{
+    color:#929db1;
+    line-height:1.8;
+}
+
+.internship-list{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+
+    gap:12px;
+
+    margin:30px 0;
+}
+
+.internship-item{
+    padding:15px;
+
+    border-radius:12px;
+
+    background:rgba(255,255,255,.05);
+
+    color:#cbd3df;
+
+    font-size:13px;
+}
+
+
+/* =========================================================
+   WORKSHOPS
+========================================================= */
+
+.workshop-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.workshop-card{
+    padding:30px;
+
+    border-radius:22px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.4s;
+}
+
+.workshop-card:hover{
+    transform:translateY(-8px);
+    border-color:#7c3aed;
+}
+
+.workshop-number{
+    font-size:12px;
+    color:#00e5ff;
+    font-weight:800;
+}
+
+.workshop-card h3{
+    margin:15px 0 10px;
+}
+
+.workshop-card p{
+    color:#8995a9;
+    line-height:1.7;
+    font-size:14px;
+}
+
+
+/* =========================================================
+   PROCESS
+========================================================= */
+
+.process{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+}
+
+.process-step{
+    text-align:center;
+    padding:25px 15px;
+}
+
+.process-number{
+    width:55px;
+    height:55px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        #00e5ff,
+        #7c3aed
+    );
+
+    font-weight:900;
+
+    box-shadow:
+        0 0 30px rgba(0,229,255,.15);
+}
+
+.process-step h4{
+    margin:17px 0 8px;
+}
+
+.process-step p{
+    color:#7f8ba0;
+    font-size:12px;
+    line-height:1.6;
+}
+
+
+/* =========================================================
+   TECHNOLOGY
+========================================================= */
+
+.tech-wrapper{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.tech{
+    padding:13px 18px;
+
+    border-radius:12px;
+
+    background:rgba(255,255,255,.045);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:#cbd3df;
+
+    font-size:13px;
+
+    transition:.3s;
+}
+
+.tech:hover{
+    color:#00e5ff;
+    border-color:#00e5ff;
+    transform:translateY(-5px);
+}
+
+
+/* =========================================================
+   FIELD EXPERIENCE
+========================================================= */
+
+.gallery{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    grid-template-rows:220px 220px;
+
+    gap:15px;
+}
+
+.gallery-item{
+    overflow:hidden;
+    border-radius:20px;
+    position:relative;
+}
+
+.gallery-item:first-child{
+    grid-row:span 2;
+}
+
+.gallery-item img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.6s;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.08);
+}
+
+.gallery-item span{
+    position:absolute;
+    bottom:15px;
+    left:15px;
+
+    padding:8px 12px;
+
+    border-radius:10px;
+
+    background:rgba(0,0,0,.55);
+    backdrop-filter:blur(10px);
+
+    font-size:12px;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.cta{
+    text-align:center;
+
+    padding:90px 30px;
+
+    border-radius:35px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0,229,255,.1),
+            rgba(124,58,237,.12),
+            rgba(255,60,172,.08)
+        );
+
+    border:1px solid rgba(255,255,255,.1);
+}
+
+.cta h2{
+    font-size:48px;
+    letter-spacing:-2px;
+    margin-bottom:18px;
+}
+
+.cta p{
+    max-width:650px;
+    margin:auto;
+
+    color:#929db2;
+
+    line-height:1.8;
+}
+
+.cta-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:30px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+    padding:50px 20px;
+
+    text-align:center;
+
+    color:#667287;
+
+    border-top:1px solid rgba(255,255,255,.07);
+}
+
+.footer-logo{
+    font-size:22px;
+    font-weight:900;
+    color:white;
+    margin-bottom:10px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:950px){
+
+    .hero{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .hero-description{
+        margin:auto;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .hero-3d{
+        height:500px;
+    }
+
+    .stats{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .drone-grid,
+    .workshop-grid,
+    .about{
+        grid-template-columns:1fr;
+    }
+
+    .research-grid{
+        grid-template-columns:1fr;
+    }
+
+    .process{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .gallery{
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:250px 180px 180px;
+    }
+
+    .gallery-item:first-child{
+        grid-column:span 2;
+        grid-row:auto;
+    }
+}
+
+@media(max-width:600px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .hero h1{
+        font-size:45px;
+        letter-spacing:-2px;
+    }
+
+    .hero-3d{
+        height:390px;
+    }
+
+    .stats{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .section-top h2{
+        font-size:34px;
+    }
+
+    .internship{
+        padding:40px 25px;
+    }
+
+    .internship h2,
+    .cta h2{
+        font-size:35px;
+    }
+
+    .internship-list{
+        grid-template-columns:1fr;
+    }
+
+    .process{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .gallery{
+        display:grid;
+        grid-template-columns:1fr;
+        grid-template-rows:250px 180px 180px 180px;
+    }
+
+    .gallery-item:first-child{
+        grid-column:auto;
+    }
+
+}
+
+
+/* =========================================================
+   SCROLL REVEAL
+========================================================= */
+
+.reveal{
+    opacity:0;
+    transform:translateY(40px);
+    transition:1s;
+}
+
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =======================================================
+     NAVIGATION
+======================================================= -->
+
+<nav>
+
+    <div class="logo">
+        DRONE<span>X</span>
+    </div>
+
+    <div class="nav-links">
+        <a href="#work">Work</a>
+        <a href="#research">Research</a>
+        <a href="#internship">Internship</a>
 ```
